@@ -1,210 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ENDLESS — Underground Luxury Streetwear</title>
-  <meta name="description" content="ENDLESS is a dark streetwear brand built from grunge textures, skeletal imagery, and limited statement pieces." />
-  <link rel="stylesheet" href="styles.css" /> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENDLESS</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050505;
+  color: #fff;
+}
+
+/* HERO IMAGE */
+.hero {
+  height: 90vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 6px;
+  margin: 0;
+}
+
+.hero p {
+  color: #aaa;
+  margin: 10px 0 20px;
+}
+
+/* BUTTON */
+.btn {
+  background: #d7ff2f;
+  color: #000;
+  padding: 15px 25px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* FORM SECTION */
+.form-section {
+  padding: 80px 20px;
+  background: #0b0b0b;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 1000px;
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #d7ff2f;
+  letter-spacing: 3px;
+}
+
+iframe {
+  width: 100%;
+  height: 1100px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+</style>
+
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">ENDLESS</a>
-      <nav class="nav">
-        <a href="index.html#featured">Featured</a>
-        <a href="index.html#story">Story</a>
-        <a href="index.html#gallery">Gallery</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main id="top">
-   <a href="https://docs.google.com/forms/d/e/1FAIpQLSfl_xBrVrMfxqCp9WJpVLPgA_8pgLc1OhEzDVvPm3Zwsjpkig/viewform"
-   target="_blank"
-   style="display:inline-block; padding:15px 25px; background:#d7ff2f; color:#000; text-decoration:none; letter-spacing:2px;">
-   CONTACT / ORDER
-</a>
+<!-- HERO -->
+<section class="hero">
+  <h1>ENDLESS</h1>
+  <p>Vintage Streetwear / Custom Pieces</p>
+
+  <a class="btn" href="#form">ORDER NOW</a>
 </section>
-        <div>
-          <span class="eyebrow">Underground Luxury Streetwear</span>
-          <h1>Built From Grunge. Designed To Leave A Mark.</h1>
-          <p>
-            ENDLESS is a dark fashion label built around skeletal imagery, repetition,
-            and emotional design language. Limited pieces. Heavy visuals. Strong identity.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="shop.html">Shop The Drop</a>
-            <a class="btn" href="product-v4.html">View The Piece</a>
-          </div>
-        </div>
 
-        <aside class="hero-card">
-          <span class="small-label">Current Release</span>
-          <h2>V4 Statement Tee</h2>
-          <p>
-            A premium streetwear piece built from gallery-style skeletal artwork,
-            gothic branding, and a washed black base designed to feel dark, sharp,
-            and collectible.
-          </p>
-        </aside>
-      </div>
-    </section>
+<!-- FORM -->
+<section id="form" class="form-section">
+  <div class="form-box">
 
-    <section id="featured">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Featured Piece</h2>
-            <p>
-              The V4 design pushes ENDLESS into a more refined lane: premium layout,
-              skeletal art direction, and a front/back balance that feels more like
-              a collection piece than basic merch.
-            </p>
-          </div>
-          <a class="btn" href="shop.html">Limited Drop</a>
-        </div>
+    <h2>CONTACT / ORDERS</h2>
 
-        <div class="grid-2">
-          <article class="product-card">
-            <div class="product-media">
-              <img src="assets/v4-front.jpg" alt="ENDLESS V4 front design" />
-            </div>
-            <div class="product-body">
-              <h3>Front Design</h3>
-              <p>
-                Multi-tone skeletal composition with gothic ENDLESS branding.
-                Built to catch attention instantly while keeping the layout clean.
-              </p>
-              <a class="btn" href="product-v4.html">See Details</a>
-            </div>
-          </article>
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfl_xBrVrMfxqCp9WJpVLPgA_8pgLc1OhEzDVvPm3Zwsjpkig/viewform?embedded=true">
+    </iframe>
 
-          <article class="product-card">
-            <div class="product-media">
-              <img src="assets/v4-back.jpg" alt="ENDLESS V4 back design" />
-            </div>
-            <div class="product-body">
-              <h3>Back Design</h3>
-              <p>
-                Framed monochrome illustration that gives the shirt a gallery-piece
-                feeling. Minimal, darker, and more premium from distance.
-              </p>
-              <a class="btn" href="product-v4.html">View Product</a>
-            </div>
-          </article>
-        </div>
+  </div>
+</section>
 
-        <div class="info-grid">
-          <div class="info-box">
-            <span>Fabric</span>
-            <strong>Heavyweight Cotton</strong>
-          </div>
-          <div class="info-box">
-            <span>Fit</span>
-            <strong>Boxy / Oversized</strong>
-          </div>
-          <div class="info-box">
-            <span>Print</span>
-            <strong>Plastisol Finish</strong>
-          </div>
-          <div class="info-box">
-            <span>Lane</span>
-            <strong>Premium Underground</strong>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- FOOTER -->
+<footer>
+  © 2026 ENDLESS / CODEANX6
+</footer>
 
-    <section id="story">
-      <div class="container story">
-        <div class="story-panel">
-          <img src="assets/brand-mood.jpg" alt="ENDLESS artwork detail" />
-        </div>
-        <div class="story-copy">
-          <span class="small-label">Brand Story</span>
-          <div class="section-head compact">
-            <div>
-              <h2>Not Basic Merch. A Real Identity.</h2>
-            </div>
-          </div>
-          <p>
-            ENDLESS lives in the space between dark art, luxury restraint, and
-            raw emotional energy. The visuals are built to feel heavy without
-            looking cluttered.
-          </p>
-          <p>
-            Every piece is meant to hold presence on its own: the silhouette,
-            the print placement, the typography, and the texture all matter.
-          </p>
-          <ul>
-            <li>Gothic influence without looking costume-like</li>
-            <li>Washed, grunge-led fashion direction</li>
-            <li>Front and back compositions that feel intentional</li>
-            <li>Limited drop energy instead of mass-produced basics</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Visual Gallery</h2>
-            <p>
-              Use this section for campaign photos, detail shots, or future drop pieces.
-              Right now it showcases the V4 direction with a dark editorial feel.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery">
-          <div class="gallery-main">
-            <div class="gallery-tile">
-              <img src="assets/v4-front.jpg" alt="ENDLESS V4 hero product image" />
-              <span class="tile-tag">Front Statement Graphic</span>
-            </div>
-          </div>
-          <div class="gallery-stack">
-            <div class="gallery-tile">
-              <img src="assets/v4-back.jpg" alt="ENDLESS V4 alternate image" />
-              <span class="tile-tag">Back Art Frame</span>
-            </div>
-            <div class="gallery-tile">
-              <img src="assets/brand-mood.jpg" alt="ENDLESS grunge artwork" />
-              <span class="tile-tag">Brand Mood</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="drop" class="cta">
-      <div class="container">
-        <div class="cta-panel">
-          <span class="small-label">Drop Access</span>
-          <h2>Enter The Next Release</h2>
-          <p>
-            This version has working page links. You can replace these later with your
-            real Shopify, Gumroad, or checkout links.
-          </p>
-          <div class="hero-actions center">
-            <a class="btn btn-primary" href="shop.html">Shop Now</a>
-            <a class="btn" href="contact.html">Join The Drop List</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <div class="container footer-inner">
-      <div>ENDLESS — Dark Luxury Streetwear</div>
-      <div><a href="shop.html">Shop</a> / <a href="product-v4.html">Product</a> / <a href="contact.html">Contact</a></div>
-    </div>
-  </footer>
 </body>
 </html>
