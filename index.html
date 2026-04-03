@@ -15,7 +15,6 @@
       --muted: rgba(244,242,236,.72);
       --line: rgba(255,255,255,.08);
       --accent: #d7ff2f;
-      --accent-soft: rgba(215,255,47,.18);
       --max: 1220px;
       --shadow: 0 25px 80px rgba(0,0,0,.45);
     }
@@ -29,7 +28,7 @@
         radial-gradient(circle at top, rgba(215,255,47,.05), transparent 24%),
         linear-gradient(180deg, #030303, #080808 30%, #050505 100%);
       color: var(--text);
-      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.5;
     }
 
@@ -123,21 +122,8 @@
       inset: 0;
       background:
         linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.55) 50%, rgba(0,0,0,.82) 100%),
-        url('ENDLESS%20GRUNDGE%20TEMP.jpg') center center / cover no-repeat;
+        url('endless-banner.jpg') center center / cover no-repeat;
       transform: scale(1.02);
-    }
-
-    .hero-noise {
-      position: absolute;
-      inset: 0;
-      background-image:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,.10) 0 1px, transparent 1px),
-        radial-gradient(circle at 70% 40%, rgba(255,255,255,.07) 0 1px, transparent 1px),
-        radial-gradient(circle at 30% 78%, rgba(255,255,255,.05) 0 1px, transparent 1px);
-      background-size: 180px 180px, 240px 240px, 300px 300px;
-      opacity: .15;
-      mix-blend-mode: screen;
-      pointer-events: none;
     }
 
     .hero-inner {
@@ -186,8 +172,6 @@
       flex-wrap: wrap;
     }
 
-    .hero-actions.center { justify-content: center; }
-
     .hero-card {
       justify-self: end;
       width: min(100%, 390px);
@@ -218,11 +202,6 @@
       gap: 18px;
       align-items: end;
       margin-bottom: 28px;
-    }
-
-    .section-head.compact {
-      grid-template-columns: 1fr;
-      margin-bottom: 10px;
     }
 
     .section-head h2 {
@@ -262,11 +241,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform .4s ease;
-    }
-
-    .product-card:hover .product-media img {
-      transform: scale(1.03);
     }
 
     .product-body { padding: 22px; }
@@ -311,78 +285,6 @@
       font-size: .95rem;
     }
 
-    .story {
-      display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: 28px;
-      align-items: center;
-    }
-
-    .story-panel {
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .story-copy p {
-      color: var(--muted);
-      margin: 0 0 16px;
-    }
-
-    .story-copy ul {
-      margin: 18px 0 0;
-      padding-left: 18px;
-      color: var(--muted);
-    }
-
-    .story-copy li { margin-bottom: 10px; }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 22px;
-    }
-
-    .gallery-main, .gallery-stack {
-      display: grid;
-      gap: 22px;
-    }
-
-    .gallery-tile {
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      background: #080808;
-      box-shadow: var(--shadow);
-    }
-
-    .gallery-tile img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .gallery-main .gallery-tile { min-height: 620px; }
-    .gallery-stack .gallery-tile { min-height: 299px; }
-
-    .tile-tag {
-      position: absolute;
-      left: 16px;
-      bottom: 16px;
-      display: inline-block;
-      padding: 10px 12px;
-      background: rgba(0,0,0,.58);
-      border: 1px solid rgba(255,255,255,.08);
-      text-transform: uppercase;
-      letter-spacing: .18em;
-      font-size: .68rem;
-    }
-
-    .form-section .section-head {
-      margin-bottom: 22px;
-    }
-
     .form-shell {
       border: 1px solid var(--line);
       background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015));
@@ -395,33 +297,6 @@
       height: 1180px;
       border: none;
       background: #fff;
-    }
-
-    .cta {
-      text-align: center;
-      padding: 96px 0;
-    }
-
-    .cta-panel {
-      border: 1px solid var(--line);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015)),
-        radial-gradient(circle at top, rgba(215,255,47,.08), transparent 48%);
-      padding: 40px 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .cta h2 {
-      margin: 0 0 12px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      font-size: clamp(1.8rem, 4vw, 3.2rem);
-    }
-
-    .cta p {
-      max-width: 700px;
-      margin: 0 auto 24px;
-      color: var(--muted);
     }
 
     footer { padding: 28px 0 40px; }
@@ -439,9 +314,7 @@
 
     @media (max-width: 980px) {
       .hero-inner,
-      .grid-2,
-      .story,
-      .gallery {
+      .grid-2 {
         grid-template-columns: 1fr;
       }
 
@@ -461,11 +334,6 @@
 
       .info-grid {
         grid-template-columns: 1fr 1fr;
-      }
-
-      .gallery-main .gallery-tile,
-      .gallery-stack .gallery-tile {
-        min-height: 420px;
       }
     }
 
@@ -490,10 +358,6 @@
       .btn {
         width: 100%;
       }
-
-      .form-frame {
-        height: 1280px;
-      }
     }
   </style>
 </head>
@@ -503,8 +367,6 @@
       <a href="#top" class="brand">ENDLESS</a>
       <nav class="nav">
         <a href="#featured">Featured</a>
-        <a href="#story">Story</a>
-        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -513,7 +375,6 @@
   <main id="top">
     <section class="hero">
       <div class="hero-media"></div>
-      <div class="hero-noise"></div>
       <div class="container hero-inner">
         <div>
           <span class="eyebrow">Underground Luxury Streetwear</span>
@@ -546,9 +407,8 @@
           <div>
             <h2>Featured Piece</h2>
             <p>
-              The V4 design pushes ENDLESS into a more refined lane: premium layout,
-              skeletal art direction, and a front/back balance that feels more like
-              a collection piece than basic merch.
+              The V4 design pushes ENDLESS into a more refined lane with a front and back balance
+              that feels like a real collection piece.
             </p>
           </div>
           <a class="btn" href="#contact">Get Access</a>
@@ -557,29 +417,25 @@
         <div class="grid-2">
           <article class="product-card">
             <div class="product-media">
-              <img src="endless%20v4%20.jpg" alt="ENDLESS V4 front design" />
+              <img src="endless-front.jpg" alt="ENDLESS V4 front design" />
             </div>
             <div class="product-body">
               <h3>Front Design</h3>
               <p>
                 Multi-tone skeletal composition with gothic ENDLESS branding.
-                Built to catch attention instantly while keeping the layout sharp.
               </p>
-              <a class="btn" href="#gallery">See Details</a>
             </div>
           </article>
 
           <article class="product-card">
             <div class="product-media">
-              <img src="endless%20v4%20-2.jpg" alt="ENDLESS V4 back design" />
+              <img src="endless-back.jpg" alt="ENDLESS V4 back design" />
             </div>
             <div class="product-body">
               <h3>Back Design</h3>
               <p>
-                Framed monochrome illustration that gives the shirt a gallery-piece
-                feeling. Minimal, darker, and premium from distance.
+                Framed monochrome illustration that gives the shirt a gallery-piece feel.
               </p>
-              <a class="btn" href="#gallery">View Product</a>
             </div>
           </article>
         </div>
@@ -605,79 +461,14 @@
       </div>
     </section>
 
-    <section id="story">
-      <div class="container story">
-        <div class="story-panel">
-          <img src="ENDLESS%20GRUNDGE%20TEMP.jpg" alt="ENDLESS artwork detail" />
-        </div>
-        <div class="story-copy">
-          <span class="small-label">Brand Story</span>
-          <div class="section-head compact">
-            <div>
-              <h2>Not Basic Merch. A Real Identity.</h2>
-            </div>
-          </div>
-          <p>
-            ENDLESS lives in the space between dark art, luxury restraint, and
-            raw emotional energy. The visuals are built to feel heavy without
-            looking cluttered.
-          </p>
-          <p>
-            Every piece is meant to hold presence on its own: the silhouette,
-            the print placement, the typography, and the texture all matter.
-          </p>
-          <ul>
-            <li>Gothic influence without looking costume-like</li>
-            <li>Washed, grunge-led fashion direction</li>
-            <li>Front and back compositions that feel intentional</li>
-            <li>Limited drop energy instead of mass-produced basics</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Visual Gallery</h2>
-            <p>
-              This section uses your real banner art and both sides of the V4 piece
-              so the site feels like a real drop page instead of a placeholder.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery">
-          <div class="gallery-main">
-            <div class="gallery-tile">
-              <img src="endless%20v4%20.jpg" alt="ENDLESS V4 hero product image" />
-              <span class="tile-tag">Front Statement Graphic</span>
-            </div>
-          </div>
-          <div class="gallery-stack">
-            <div class="gallery-tile">
-              <img src="endless%20v4%20-2.jpg" alt="ENDLESS V4 alternate image" />
-              <span class="tile-tag">Back Art Frame</span>
-            </div>
-            <div class="gallery-tile">
-              <img src="ENDLESS%20GRUNDGE%20TEMP.jpg" alt="ENDLESS grunge artwork" />
-              <span class="tile-tag">Brand Mood</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="form-section">
+    <section id="contact">
       <div class="container">
         <div class="section-head">
           <div>
             <span class="small-label">Contact / Orders</span>
             <h2>Submit Your Order Or Inquiry</h2>
             <p>
-              The form below is connected to your Google Form. For the site embed,
-              it has to use the embedded version of the same form link.
+              Use the form below for orders, questions, and custom requests.
             </p>
           </div>
         </div>
@@ -687,25 +478,7 @@
             class="form-frame"
             src="https://docs.google.com/forms/d/e/1FAIpQLSfl_xBrVrMfxqCp9WJpVLPgA_8pgLc1OhEzDVvPm3Zwsjpkig/viewform?embedded=true"
             title="ENDLESS contact form">
-            Loading…
           </iframe>
-        </div>
-      </div>
-    </section>
-
-    <section id="drop" class="cta">
-      <div class="container">
-        <div class="cta-panel">
-          <span class="small-label">Drop Access</span>
-          <h2>Enter The Next Release</h2>
-          <p>
-            Use the order form to lock in custom requests, collaborations,
-            or future release access.
-          </p>
-          <div class="hero-actions center">
-            <a class="btn btn-primary" href="#contact">Open Form</a>
-            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfl_xBrVrMfxqCp9WJpVLPgA_8pgLc1OhEzDVvPm3Zwsjpkig/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Open In New Tab</a>
-          </div>
         </div>
       </div>
     </section>
@@ -714,7 +487,7 @@
   <footer>
     <div class="container footer-inner">
       <div>ENDLESS — Dark Luxury Streetwear</div>
-      <div><a href="#featured">Featured</a> / <a href="#gallery">Gallery</a> / <a href="#contact">Contact</a></div>
+      <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfl_xBrVrMfxqCp9WJpVLPgA_8pgLc1OhEzDVvPm3Zwsjpkig/viewform?usp=dialog" target="_blank">Open Form</a></div>
     </div>
   </footer>
 </body>
